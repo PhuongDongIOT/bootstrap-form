@@ -13,12 +13,18 @@
             "email": "dwightwatson@me.com"
         }
     ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/PhuongDongIOT/laravel-collective-html"
+        }
+    ],
     "require": {
         "php": "^8.0",
         "illuminate/config": "^11.0",
         "illuminate/session": "^11.0",
         "illuminate/support": "^11.0",
-        "laravelcollective/html": "~6.0"
+        "laravelcollective/html": "dev-master"
     },
     "require-dev": {
         "mockery/mockery": "~1.4.1",
