@@ -24,7 +24,7 @@
         "illuminate/config": "^11.0",
         "illuminate/session": "^11.0",
         "illuminate/support": "^11.0",
-        "laravelcollective/html": "dev-main"
+        "laravelcollective/html": "dev-master"
     },
     "require-dev": {
         "mockery/mockery": "~1.4.1",
