@@ -44,5 +44,7 @@
                 "BootForm": "Watson\\BootstrapForm\\Facades\\BootstrapForm"
             }
         }
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
