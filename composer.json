@@ -1,7 +1,11 @@
 {
     "name": "watson/bootstrap-form",
     "description": "Laravel 5 form wrappers for Bootstrap 3.",
-    "keywords": ["laravel", "form", "bootstrap"],
+    "keywords": [
+        "laravel",
+        "form",
+        "bootstrap"
+    ],
     "license": "MIT",
     "authors": [
         {
@@ -9,21 +13,38 @@
             "email": "dwightwatson@me.com"
         }
     ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/PhuongDongIOT/laravel-collective-html"
+        }
+    ],
     "require": {
-        "php": ">=5.4.0",
-        "illuminate/config": "~5.0",
-        "illuminate/session": "~5.0",
-        "illuminate/support": "~5.0",
-        "laravelcollective/html": "~5.0"
+        "php": "^8.0",
+        "illuminate/config": "^11.0",
+        "illuminate/session": "^11.0",
+        "illuminate/support": "^11.0",
+        "laravelcollective/html": "dev-main"
     },
     "require-dev": {
-        "phpunit/phpunit": "~4.6",
-        "mockery/mockery": "0.9.*"
+        "mockery/mockery": "~1.4.1",
+        "phpunit/phpunit": "~9.5"
     },
     "autoload": {
         "psr-4": {
             "Watson\\BootstrapForm\\": "src/"
         }
     },
-    "minimum-stability": "dev"
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Watson\\BootstrapForm\\BootstrapFormServiceProvider"
+            ],
+            "aliases": {
+                "BootForm": "Watson\\BootstrapForm\\Facades\\BootstrapForm"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
